@@ -5,6 +5,7 @@ import time
 import argparse
 import html2text
 
+parser = argparse.ArgumentParser(description='Monitor a webpage.')
 parser.add_argument('--dur', dest='duration', default=-1, type=float, help='(optional) add a duration after which to automatically stop checking')
 
 args = parser.parse_args()
